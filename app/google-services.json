@@ -1,0 +1,72 @@
+{
+  "project_info": {
+    "project_number": "304041948257",
+    "firebase_url": "https://gomusic-bd1e3.firebaseio.com",
+    "project_id": "gomusic-bd1e3",
+    "storage_bucket": "gomusic-bd1e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304041948257:android:f2cf9eb20b7820e7",
+        "android_client_info": {
+          "package_name": "com.pca.gomusic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304041948257-jhd4mq0kajqtc8i15er2eofbobmc7k4a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pca.gomusic",
+            "certificate_hash": "e0791fecf2ab9a61ec5818a770ff17bdf57b3960"
+          }
+        },
+        {
+          "client_id": "304041948257-quk8to8fp99bobntc900vc3ag6p1f0du.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pca.gomusic",
+            "certificate_hash": "82dfa557730dbb0094a18a0ce52392afbe2c50e4"
+          }
+        },
+        {
+          "client_id": "304041948257-krc0kg5724kc8cm80lekldl3c6gq73dk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pca.gomusic",
+            "certificate_hash": "580ed6f00c8b4f83e904c9ef6f7cae0dcfd88e75"
+          }
+        },
+        {
+          "client_id": "304041948257-h6t59ifqg41ossn881jfg3fbpg0iunu4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pca.gomusic",
+            "certificate_hash": "6fc902063589f50fa1f0a946f979200146afcfeb"
+          }
+        },
+        {
+          "client_id": "304041948257-fk6g9p88cn4co6gd0ik53ff04cc2t64c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZYoPk4maEl0EXLQTVEVBuFBufme_mccE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "304041948257-fk6g9p88cn4co6gd0ik53ff04cc2t64c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

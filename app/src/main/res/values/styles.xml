@@ -1,0 +1,80 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/lightergray</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textSize">15sp</item>
+        <item name="textColor">@color/black</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:searchViewStyle" tools:ignore="NewApi">@style/searchViewStyle</item>
+        <item name="searchViewStyle">@style/searchViewStyle</item>
+    </style>
+
+    <style name="AppTheme.MainDark" >
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="textColor">@color/textColor</item>
+        <item name="backgroundColor">@color/black</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:searchViewStyle" tools:ignore="NewApi">@style/searchViewStyle</item>
+        <item name="searchViewStyle">@style/searchViewStyle</item>
+    </style>
+
+
+    <style name="searchViewStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/trans</item>
+        <item name="android:textColorHint">@color/dark</item>
+        <item name="android:editTextColor">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+    </style>
+
+
+    <style name="CustomTextStyle">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:colorBackground">@color/trans</item>
+        <item name="android:enterFadeDuration">2000</item>
+        <item name="android:exitFadeDuration">20000</item>
+    </style>
+
+    <style name="popupMenuStyle">
+        <item name="android:textColor">#000</item>
+        <item name="android:itemBackground">#fff</item>
+        <item name="android:divider">#000</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <style name="AppTheme.Permission">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">@color/_00</item>
+    </style>
+
+    <style name="CustomNavigationTextAppearance" parent="Base.TextAppearance.AppCompat">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">?attr/textColor</item>
+    </style>
+
+    <style name="AppTheme.NoActionBarVideoPlayerActivity">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">#000</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+
+
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:foreground="@drawable/click_effect"
+    android:background="?attr/backgroundColor"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="@dimen/medium_margin"
+    tools:ignore="UnusedAttribute">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/backgroundColor">
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="?attr/backgroundColor">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/_art000"
+                android:id="@+id/albumArt"
+                android:layout_gravity="center"/>
+
+            <es.claucookie.miniequalizerlibrary.EqualizerView
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/equalizer"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:visibility="gone"
+                custom:foregroundColor="?attr/colorAccent"
+                custom:animDuration="5000"/>
+
+        </RelativeLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/title"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/textColor"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/artist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:singleLine="true"
+                        android:maxWidth="100dp"
+                        android:textSize="11sp"
+                        android:textColor="?attr/textColor"
+                        tools:ignore="SmallSp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:textSize="11sp"
+                        android:textColor="?attr/textColor"
+                        android:layout_gravity="center"
+                        tools:ignore="SmallSp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:textSize="11sp"
+                        android:textColor="?attr/textColor"
+                        android:layout_gravity="center"
+                        tools:ignore="SmallSp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/optionsMenu"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:background="@drawable/ic_options_menu_default"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,806 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.pca.gomusic"
+4    android:compileSdkVersion="29"
+5    android:compileSdkVersionCodename="10"
+6    android:versionCode="42"
+7    android:versionName="2.2" >
+8
+9    <uses-sdk
+10        android:minSdkVersion="21"
+10-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml
+11        android:targetSdkVersion="29" />
+11-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml
+12
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:8:274-77
+13-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:8:291-345
+14    <uses-permission android:name="android.permission.WAKE_LOCK" />
+14-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:9:353-67
+14-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:9:370-413
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:10:421-79
+15-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:10:438-493
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:11:501-80
+16-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:11:518-574
+17
+18    <uses-permission-sdk-23 android:name="android.permission.WRITE_SETTINGS" />
+18-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:13:583-78
+18-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:13:607-655
+19
+20    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+20-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:15:664-75
+20-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:15:681-733
+21    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+21-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:16:741-78
+21-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:16:758-812
+22    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+22-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:17:820-80
+22-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:17:837-893
+23
+24    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" />
+24-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:19:902-84
+24-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:19:926-980
+25    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
+25-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:20:988-87
+25-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:20:1012-1068
+26
+27    <uses-permission android:name="android.permission.INTERNET" />
+27-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:22:1077-65
+27-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:22:1094-1136
+28    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+28-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:25:1144-47
+28-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:25:1169-1224
+29    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+29-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:26:1276-109
+29-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:26:1293-1378
+30    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+30-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:27:1386-80
+30-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:27:1403-1459
+31    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+31-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:28:1467-81
+31-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:28:1484-1541
+32
+33    <application
+33-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:38:1550-130:18
+34        android:allowBackup="true"
+34-->[com.github.claucookie.miniequalizer:library:1.0.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/66b8aa1e3cc810db99dc1806862f79de/library-1.0.0/AndroidManifest.xml:10:9-35
+35        android:appCategory="audio"
+35-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:38:1571-1598
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.1.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/a66f5524c6b6ec4c7a539eae64ae718a/core-1.1.0/AndroidManifest.xml:24:18-86
+37        android:debuggable="true"
+38        android:icon="@drawable/app_icon"
+38-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:38:1607-1640
+39        android:label="@string/app_name"
+39-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:38:1649-1681
+40        android:roundIcon="@drawable/app_icon"
+40-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:38:1690-1728
+41        android:supportsRtl="true"
+41-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:38:1737-1763
+42        android:testOnly="true"
+43        android:theme="@style/AppTheme"
+43-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:38:1772-1803
+44        android:useEmbeddedDex="true" >
+44-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:38:1812-1841
+45        <activity
+45-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:40:1899-56
+46            android:name="com.pca.gomusic.Activities.FeedbackActivity"
+46-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:40:1909-1952
+47            android:theme="@style/AppTheme" />
+47-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:40:1965-1996
+48        <activity
+48-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:43:2017-56
+49            android:name="com.pca.gomusic.Activities.SignInActivity"
+49-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:43:2039-2080
+50            android:theme="@style/AppTheme" />
+50-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:43:2093-2124
+51        <activity
+51-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:46:2145-56
+52            android:name="com.pca.gomusic.Activities.SettingsActivity"
+52-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:46:2167-2210
+53            android:theme="@style/AppTheme" />
+53-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:46:2223-2254
+54
+55        <meta-data
+55-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:50:2276-36
+56            android:name="firebase_performance_logcat_enabled"
+56-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:50:2299-2349
+57            android:value="true" />
+57-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:50:2362-2382
+58
+59        <activity
+59-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:55:2395-58
+60            android:name="com.pca.gomusic.Activities.PermissionActivity"
+60-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:55:2417-2462
+61            android:screenOrientation="portrait"
+61-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:55:2475-2511
+62            android:theme="@style/AppTheme.Permission" />
+62-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:55:2524-2566
+63        <activity android:name="com.pca.gomusic.Activities.AlbumActivity" />
+63-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:56:2578-61
+63-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:56:2588-2628
+64        <activity
+64-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:59:2640-32
+65            android:name="com.pca.gomusic.Activities.ArtistActivity"
+65-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:59:2662-2703
+66            android:label="" />
+66-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:59:2716-2732
+67
+68        <service
+68-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:63:2745-67:18
+69            android:name="com.pca.gomusic.Services.MyMessagingService"
+69-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:63:2766-2809
+70            android:exported="false" >
+70-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:63:2822-2846
+71            <intent-filter>
+71-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:64:2860-66:28
+72                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+72-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:65:2892-77
+72-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:65:2900-2950
+73            </intent-filter>
+74        </service>
+75        <service
+75-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:71:3010-39
+76            android:name="com.pca.gomusic.Services.PlayerService"
+76-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:71:3031-3069
+77            android:enabled="true"
+77-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:71:3082-3104
+78            android:exported="true" />
+78-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:71:3117-3140
+79
+80        <meta-data
+80-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:75:3153-53
+81            android:name="com.google.firebase.messaging.default_notification_icon"
+81-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:75:3176-3246
+82            android:resource="@drawable/app_icon" />
+82-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:75:3259-3296
+83        <meta-data
+83-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:78:3308-53
+84            android:name="com.google.firebase.messaging.default_notification_color"
+84-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:78:3331-3402
+85            android:resource="@color/colorAccent" />
+85-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:78:3415-3452
+86        <meta-data
+86-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:81:3464-70
+87            android:name="com.google.android.gms.ads.APPLICATION_ID"
+87-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:81:3487-3543
+88            android:value="ca-app-pub-2858093115841936~3200227222" />
+88-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:81:3556-3610
+89        <meta-data
+89-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:84:3622-63
+90            android:name="com.facebook.sdk.ApplicationId"
+90-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:84:3645-3690
+91            android:value="@string/facebook_application_id" />
+91-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:84:3703-3750
+92
+93        <provider
+93-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:89:3763-40
+94            android:name="com.facebook.FacebookContentProvider"
+94-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:89:3785-3836
+95            android:authorities="com.facebook.app.FacebookContentProvider310168126590917"
+95-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:89:3849-3926
+96            android:exported="false" />
+96-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:89:3939-3963
+97
+98        <activity
+98-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:94:3976-100:19
+99            android:name="com.pca.gomusic.Activities.WelcomeScreen"
+99-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:94:3998-4038
+100            android:screenOrientation="portrait"
+100-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:94:4051-4087
+101            android:theme="@style/AppTheme" >
+101-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:94:4100-4131
+102            <intent-filter>
+102-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:95:4145-99:28
+103                <action android:name="android.intent.action.MAIN" />
+103-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:96:4177-68
+103-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:96:4185-4226
+104
+105                <category android:name="android.intent.category.LAUNCHER" />
+105-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:98:4247-75
+105-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:98:4257-4304
+106            </intent-filter>
+107        </activity>
+108        <activity
+108-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:110:4365-78
+109            android:name="com.pca.gomusic.Activities.VideoPlayerActivity"
+109-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:110:4387-4433
+110            android:alwaysRetainTaskState="true"
+110-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:110:4446-4482
+111            android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize"
+111-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:110:4495-4573
+112            android:launchMode="singleTask"
+112-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:110:4586-4617
+113            android:parentActivityName="com.pca.gomusic.Activities.MainActivity"
+113-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:110:4630-4683
+114            android:resizeableActivity="true"
+114-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:110:4696-4729
+115            android:rotationAnimation="crossfade"
+115-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:110:4742-4779
+116            android:supportsPictureInPicture="true"
+116-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:110:4792-4831
+117            android:theme="@style/AppTheme.NoActionBarVideoPlayerActivity" />
+117-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:110:4844-4906
+118        <activity
+118-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:119:4918-55
+119            android:name="com.pca.gomusic.Activities.MainActivity"
+119-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:119:4940-4979
+120            android:alwaysRetainTaskState="false"
+120-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:119:4992-5029
+121            android:launchMode="standard"
+121-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:119:5042-5071
+122            android:parentActivityName="com.pca.gomusic.Activities.MainActivity"
+122-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:119:5084-5137
+123            android:resizeableActivity="true"
+123-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:119:5150-5183
+124            android:screenOrientation="portrait"
+124-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:119:5196-5232
+125            android:showWhenLocked="false"
+125-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:119:5245-5275
+126            android:supportsPictureInPicture="true" />
+126-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:119:5288-5327
+127
+128        <meta-data
+128-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:123:5340-72
+129            android:name="io.fabric.ApiKey"
+129-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:123:5363-5394
+130            android:value="e98b20335baba8b05e9215924c85969c6bcce61d" />
+130-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:123:5407-5463
+131        <meta-data
+131-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:126:5475-69
+132            android:name="com.google.android.gms.version"
+132-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:126:5498-5543
+133            android:value="@integer/google_play_services_version" />
+133-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:126:5556-5609
+134
+135        <activity
+135-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:128:5622-64
+136            android:name="com.facebook.FacebookActivity"
+136-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:128:5632-5676
+137            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+137-->[com.facebook.android:facebook-common:5.9.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/9967fd8227c55be93d009f8b2d3632f7/jetified-facebook-common-5.9.0/AndroidManifest.xml:31:13-96
+138            android:theme="@style/com_facebook_activity_theme" />
+138-->[com.facebook.android:facebook-common:5.9.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/9967fd8227c55be93d009f8b2d3632f7/jetified-facebook-common-5.9.0/AndroidManifest.xml:32:13-63
+139        <activity
+139-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:129:5688-73
+140            android:name="com.google.android.gms.ads.AdActivity"
+140-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:129:5698-5750
+141            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+141-->[com.google.android.gms:play-services-ads-lite:18.3.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/a0f94cdb10c0f48afade11b9f0b4f2ac/play-services-ads-lite-18.3.0/AndroidManifest.xml:31:13-122
+142            android:exported="false"
+142-->[com.google.android.gms:play-services-ads-lite:18.3.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/a0f94cdb10c0f48afade11b9f0b4f2ac/play-services-ads-lite-18.3.0/AndroidManifest.xml:32:13-37
+143            android:theme="@android:style/Theme.Translucent" />
+143-->[com.google.android.gms:play-services-ads-lite:18.3.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/a0f94cdb10c0f48afade11b9f0b4f2ac/play-services-ads-lite-18.3.0/AndroidManifest.xml:33:13-61
+144        <activity android:name="com.facebook.CustomTabMainActivity" />
+144-->[com.facebook.android:facebook-common:5.9.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/9967fd8227c55be93d009f8b2d3632f7/jetified-facebook-common-5.9.0/AndroidManifest.xml:33:9-71
+144-->[com.facebook.android:facebook-common:5.9.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/9967fd8227c55be93d009f8b2d3632f7/jetified-facebook-common-5.9.0/AndroidManifest.xml:33:19-68
+145        <activity android:name="com.facebook.CustomTabActivity" />
+145-->[com.facebook.android:facebook-common:5.9.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/9967fd8227c55be93d009f8b2d3632f7/jetified-facebook-common-5.9.0/AndroidManifest.xml:34:9-67
+145-->[com.facebook.android:facebook-common:5.9.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/9967fd8227c55be93d009f8b2d3632f7/jetified-facebook-common-5.9.0/AndroidManifest.xml:34:19-64
+146        <activity
+146-->[com.google.firebase:firebase-auth:19.2.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/15f49ace5bc986f4a1b1375921b275a3/firebase-auth-19.2.0/AndroidManifest.xml:24:9-31:50
+147            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+147-->[com.google.firebase:firebase-auth:19.2.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/15f49ace5bc986f4a1b1375921b275a3/firebase-auth-19.2.0/AndroidManifest.xml:25:13-85
+148            android:excludeFromRecents="true"
+148-->[com.google.firebase:firebase-auth:19.2.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/15f49ace5bc986f4a1b1375921b275a3/firebase-auth-19.2.0/AndroidManifest.xml:26:13-46
+149            android:exported="true"
+149-->[com.google.firebase:firebase-auth:19.2.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/15f49ace5bc986f4a1b1375921b275a3/firebase-auth-19.2.0/AndroidManifest.xml:27:13-36
+150            android:launchMode="singleTask"
+150-->[com.google.firebase:firebase-auth:19.2.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/15f49ace5bc986f4a1b1375921b275a3/firebase-auth-19.2.0/AndroidManifest.xml:28:13-44
+151            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+151-->[com.google.firebase:firebase-auth:19.2.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/15f49ace5bc986f4a1b1375921b275a3/firebase-auth-19.2.0/AndroidManifest.xml:29:13-102
+152            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+152-->[com.google.firebase:firebase-auth:19.2.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/15f49ace5bc986f4a1b1375921b275a3/firebase-auth-19.2.0/AndroidManifest.xml:30:13-72
+153
+154        <service
+154-->[com.google.firebase:firebase-auth:19.2.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/15f49ace5bc986f4a1b1375921b275a3/firebase-auth-19.2.0/AndroidManifest.xml:33:9-39:19
+155            android:name="com.google.firebase.components.ComponentDiscoveryService"
+155-->[com.google.firebase:firebase-auth:19.2.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/15f49ace5bc986f4a1b1375921b275a3/firebase-auth-19.2.0/AndroidManifest.xml:34:13-84
+156            android:directBootAware="true"
+156-->[com.google.firebase:firebase-common:19.3.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ec9c104ef9f532c39c958cadf4780445/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+157            android:exported="false" >
+157-->[com.google.firebase:firebase-auth:19.2.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/15f49ace5bc986f4a1b1375921b275a3/firebase-auth-19.2.0/AndroidManifest.xml:35:13-37
+158            <meta-data
+158-->[com.google.firebase:firebase-auth:19.2.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/15f49ace5bc986f4a1b1375921b275a3/firebase-auth-19.2.0/AndroidManifest.xml:36:13-38:85
+159                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+159-->[com.google.firebase:firebase-auth:19.2.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/15f49ace5bc986f4a1b1375921b275a3/firebase-auth-19.2.0/AndroidManifest.xml:37:17-109
+160                android:value="com.google.firebase.components.ComponentRegistrar" />
+160-->[com.google.firebase:firebase-auth:19.2.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/15f49ace5bc986f4a1b1375921b275a3/firebase-auth-19.2.0/AndroidManifest.xml:38:17-82
+161            <meta-data
+161-->[com.google.firebase:firebase-messaging:20.1.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/96394aeb1aefc8c30988e2897527e177/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:38:13-40:85
+162                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+162-->[com.google.firebase:firebase-messaging:20.1.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/96394aeb1aefc8c30988e2897527e177/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:39:17-119
+163                android:value="com.google.firebase.components.ComponentRegistrar" />
+163-->[com.google.firebase:firebase-messaging:20.1.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/96394aeb1aefc8c30988e2897527e177/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:40:17-82
+164            <meta-data
+164-->[com.google.firebase:firebase-perf:19.0.4] /home/pascal/.gradle/caches/transforms-2/files-2.1/3b3062db09fc6464c004d4e78ca9d2c0/firebase-perf-19.0.4/AndroidManifest.xml:34:13-36:85
+165                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar"
+165-->[com.google.firebase:firebase-perf:19.0.4] /home/pascal/.gradle/caches/transforms-2/files-2.1/3b3062db09fc6464c004d4e78ca9d2c0/firebase-perf-19.0.4/AndroidManifest.xml:35:17-109
+166                android:value="com.google.firebase.components.ComponentRegistrar" />
+166-->[com.google.firebase:firebase-perf:19.0.4] /home/pascal/.gradle/caches/transforms-2/files-2.1/3b3062db09fc6464c004d4e78ca9d2c0/firebase-perf-19.0.4/AndroidManifest.xml:36:17-82
+167            <meta-data
+167-->[com.google.firebase:firebase-firestore:21.3.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/ce162bbc49a2010f0fcaca4230c2a8dd/jetified-firebase-firestore-21.3.1/AndroidManifest.xml:20:13-22:85
+168                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+168-->[com.google.firebase:firebase-firestore:21.3.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/ce162bbc49a2010f0fcaca4230c2a8dd/jetified-firebase-firestore-21.3.1/AndroidManifest.xml:21:17-111
+169                android:value="com.google.firebase.components.ComponentRegistrar" />
+169-->[com.google.firebase:firebase-firestore:21.3.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/ce162bbc49a2010f0fcaca4230c2a8dd/jetified-firebase-firestore-21.3.1/AndroidManifest.xml:22:17-82
+170            <meta-data
+170-->[com.google.android.gms:play-services-measurement-api:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/b1b74099740d79d74c57b34e7c4a9306/play-services-measurement-api-17.2.1/AndroidManifest.xml:30:13-32:85
+171                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+171-->[com.google.android.gms:play-services-measurement-api:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/b1b74099740d79d74c57b34e7c4a9306/play-services-measurement-api-17.2.1/AndroidManifest.xml:31:17-139
+172                android:value="com.google.firebase.components.ComponentRegistrar" />
+172-->[com.google.android.gms:play-services-measurement-api:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/b1b74099740d79d74c57b34e7c4a9306/play-services-measurement-api-17.2.1/AndroidManifest.xml:32:17-82
+173            <meta-data
+173-->[com.google.firebase:firebase-config:19.0.4] /home/pascal/.gradle/caches/transforms-2/files-2.1/545955b7a89f82d8ab36597cedf28160/firebase-config-19.0.4/AndroidManifest.xml:32:13-34:85
+174                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+174-->[com.google.firebase:firebase-config:19.0.4] /home/pascal/.gradle/caches/transforms-2/files-2.1/545955b7a89f82d8ab36597cedf28160/firebase-config-19.0.4/AndroidManifest.xml:33:17-117
+175                android:value="com.google.firebase.components.ComponentRegistrar" />
+175-->[com.google.firebase:firebase-config:19.0.4] /home/pascal/.gradle/caches/transforms-2/files-2.1/545955b7a89f82d8ab36597cedf28160/firebase-config-19.0.4/AndroidManifest.xml:34:17-82
+176            <meta-data
+176-->[com.google.firebase:firebase-iid:20.0.2] /home/pascal/.gradle/caches/transforms-2/files-2.1/9bddcd611c421e154902999a55a05402/firebase-iid-20.0.2/AndroidManifest.xml:32:13-34:85
+177                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+177-->[com.google.firebase:firebase-iid:20.0.2] /home/pascal/.gradle/caches/transforms-2/files-2.1/9bddcd611c421e154902999a55a05402/firebase-iid-20.0.2/AndroidManifest.xml:33:17-96
+178                android:value="com.google.firebase.components.ComponentRegistrar" />
+178-->[com.google.firebase:firebase-iid:20.0.2] /home/pascal/.gradle/caches/transforms-2/files-2.1/9bddcd611c421e154902999a55a05402/firebase-iid-20.0.2/AndroidManifest.xml:34:17-82
+179            <meta-data
+179-->[com.google.firebase:firebase-datatransport:17.0.3] /home/pascal/.gradle/caches/transforms-2/files-2.1/0434ea463da62b87f9036e8234a08944/firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
+180                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+180-->[com.google.firebase:firebase-datatransport:17.0.3] /home/pascal/.gradle/caches/transforms-2/files-2.1/0434ea463da62b87f9036e8234a08944/firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
+181                android:value="com.google.firebase.components.ComponentRegistrar" />
+181-->[com.google.firebase:firebase-datatransport:17.0.3] /home/pascal/.gradle/caches/transforms-2/files-2.1/0434ea463da62b87f9036e8234a08944/firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
+182            <meta-data
+182-->[com.google.firebase:firebase-abt:19.0.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/f0dfa52e0af351d01b6dcf088448dfd4/firebase-abt-19.0.0/AndroidManifest.xml:13:13-15:85
+183                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+183-->[com.google.firebase:firebase-abt:19.0.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/f0dfa52e0af351d01b6dcf088448dfd4/firebase-abt-19.0.0/AndroidManifest.xml:14:17-109
+184                android:value="com.google.firebase.components.ComponentRegistrar" />
+184-->[com.google.firebase:firebase-abt:19.0.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/f0dfa52e0af351d01b6dcf088448dfd4/firebase-abt-19.0.0/AndroidManifest.xml:15:17-82
+185        </service>
+186
+187        <activity
+187-->[com.google.android.gms:play-services-auth:17.0.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/2df814c55941d66b6d2cecb5ee5cd305/play-services-auth-17.0.0/AndroidManifest.xml:23:9-27:75
+188            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+188-->[com.google.android.gms:play-services-auth:17.0.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/2df814c55941d66b6d2cecb5ee5cd305/play-services-auth-17.0.0/AndroidManifest.xml:24:13-93
+189            android:excludeFromRecents="true"
+189-->[com.google.android.gms:play-services-auth:17.0.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/2df814c55941d66b6d2cecb5ee5cd305/play-services-auth-17.0.0/AndroidManifest.xml:25:13-46
+190            android:exported="false"
+190-->[com.google.android.gms:play-services-auth:17.0.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/2df814c55941d66b6d2cecb5ee5cd305/play-services-auth-17.0.0/AndroidManifest.xml:26:13-37
+191            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+191-->[com.google.android.gms:play-services-auth:17.0.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/2df814c55941d66b6d2cecb5ee5cd305/play-services-auth-17.0.0/AndroidManifest.xml:27:13-72
+192        <!--
+193            Service handling Google Sign-In user revocation. For apps that do not integrate with
+194            Google Sign-In, this service will never be started.
+195        -->
+196        <service
+196-->[com.google.android.gms:play-services-auth:17.0.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/2df814c55941d66b6d2cecb5ee5cd305/play-services-auth-17.0.0/AndroidManifest.xml:33:9-36:110
+197            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+197-->[com.google.android.gms:play-services-auth:17.0.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/2df814c55941d66b6d2cecb5ee5cd305/play-services-auth-17.0.0/AndroidManifest.xml:34:13-89
+198            android:exported="true"
+198-->[com.google.android.gms:play-services-auth:17.0.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/2df814c55941d66b6d2cecb5ee5cd305/play-services-auth-17.0.0/AndroidManifest.xml:35:13-36
+199            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+199-->[com.google.android.gms:play-services-auth:17.0.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/2df814c55941d66b6d2cecb5ee5cd305/play-services-auth-17.0.0/AndroidManifest.xml:36:13-107
+200        <!--
+201             FirebaseMessagingService performs security checks at runtime,
+202             but set to not exported to explicitly avoid allowing another app to call it.
+203        -->
+204        <service
+204-->[com.google.firebase:firebase-messaging:20.1.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/96394aeb1aefc8c30988e2897527e177/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:28:9-34:19
+205            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+205-->[com.google.firebase:firebase-messaging:20.1.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/96394aeb1aefc8c30988e2897527e177/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:29:13-82
+206            android:exported="false" >
+206-->[com.google.firebase:firebase-messaging:20.1.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/96394aeb1aefc8c30988e2897527e177/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:30:13-37
+207            <intent-filter android:priority="-500" >
+207-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:64:2860-66:28
+208                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+208-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:65:2892-77
+208-->/home/pascal/Documents/GitHubProjects/Go Music/app/src/main/AndroidManifest.xml:65:2900-2950
+209            </intent-filter>
+210        </service>
+211
+212        <provider
+212-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/fd8591b540a4d91b12ae84b9c3e5ff13/jetified-crashlytics-2.10.1/AndroidManifest.xml:19:9-23:38
+213            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+213-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/fd8591b540a4d91b12ae84b9c3e5ff13/jetified-crashlytics-2.10.1/AndroidManifest.xml:20:13-75
+214            android:authorities="com.pca.gomusic.crashlyticsinitprovider"
+214-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/fd8591b540a4d91b12ae84b9c3e5ff13/jetified-crashlytics-2.10.1/AndroidManifest.xml:21:13-75
+215            android:exported="false"
+215-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/fd8591b540a4d91b12ae84b9c3e5ff13/jetified-crashlytics-2.10.1/AndroidManifest.xml:22:13-37
+216            android:initOrder="90" />
+216-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/fd8591b540a4d91b12ae84b9c3e5ff13/jetified-crashlytics-2.10.1/AndroidManifest.xml:23:13-35
+217
+218        <receiver
+218-->[com.google.android.gms:play-services-measurement:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/dbec4e65bd84edcb63bc836a99bde5cd/play-services-measurement-17.2.1/AndroidManifest.xml:29:9-33:20
+219            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+219-->[com.google.android.gms:play-services-measurement:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/dbec4e65bd84edcb63bc836a99bde5cd/play-services-measurement-17.2.1/AndroidManifest.xml:30:13-85
+220            android:enabled="true"
+220-->[com.google.android.gms:play-services-measurement:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/dbec4e65bd84edcb63bc836a99bde5cd/play-services-measurement-17.2.1/AndroidManifest.xml:31:13-35
+221            android:exported="false" >
+221-->[com.google.android.gms:play-services-measurement:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/dbec4e65bd84edcb63bc836a99bde5cd/play-services-measurement-17.2.1/AndroidManifest.xml:32:13-37
+222        </receiver>
+223        <receiver
+223-->[com.google.android.gms:play-services-measurement:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/dbec4e65bd84edcb63bc836a99bde5cd/play-services-measurement-17.2.1/AndroidManifest.xml:34:9-42:20
+224            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+224-->[com.google.android.gms:play-services-measurement:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/dbec4e65bd84edcb63bc836a99bde5cd/play-services-measurement-17.2.1/AndroidManifest.xml:35:13-100
+225            android:enabled="true"
+225-->[com.google.android.gms:play-services-measurement:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/dbec4e65bd84edcb63bc836a99bde5cd/play-services-measurement-17.2.1/AndroidManifest.xml:36:13-35
+226            android:exported="true"
+226-->[com.google.android.gms:play-services-measurement:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/dbec4e65bd84edcb63bc836a99bde5cd/play-services-measurement-17.2.1/AndroidManifest.xml:37:13-36
+227            android:permission="android.permission.INSTALL_PACKAGES" >
+227-->[com.google.android.gms:play-services-measurement:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/dbec4e65bd84edcb63bc836a99bde5cd/play-services-measurement-17.2.1/AndroidManifest.xml:38:13-69
+228            <intent-filter>
+228-->[com.google.android.gms:play-services-measurement:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/dbec4e65bd84edcb63bc836a99bde5cd/play-services-measurement-17.2.1/AndroidManifest.xml:39:13-41:29
+229                <action android:name="com.android.vending.INSTALL_REFERRER" />
+229-->[com.google.android.gms:play-services-measurement:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/dbec4e65bd84edcb63bc836a99bde5cd/play-services-measurement-17.2.1/AndroidManifest.xml:40:17-79
+229-->[com.google.android.gms:play-services-measurement:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/dbec4e65bd84edcb63bc836a99bde5cd/play-services-measurement-17.2.1/AndroidManifest.xml:40:25-76
+230            </intent-filter>
+231        </receiver>
+232
+233        <service
+233-->[com.google.android.gms:play-services-measurement:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/dbec4e65bd84edcb63bc836a99bde5cd/play-services-measurement-17.2.1/AndroidManifest.xml:44:9-47:40
+234            android:name="com.google.android.gms.measurement.AppMeasurementService"
+234-->[com.google.android.gms:play-services-measurement:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/dbec4e65bd84edcb63bc836a99bde5cd/play-services-measurement-17.2.1/AndroidManifest.xml:45:13-84
+235            android:enabled="true"
+235-->[com.google.android.gms:play-services-measurement:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/dbec4e65bd84edcb63bc836a99bde5cd/play-services-measurement-17.2.1/AndroidManifest.xml:46:13-35
+236            android:exported="false" />
+236-->[com.google.android.gms:play-services-measurement:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/dbec4e65bd84edcb63bc836a99bde5cd/play-services-measurement-17.2.1/AndroidManifest.xml:47:13-37
+237        <service
+237-->[com.google.android.gms:play-services-measurement:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/dbec4e65bd84edcb63bc836a99bde5cd/play-services-measurement-17.2.1/AndroidManifest.xml:48:9-52:72
+238            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+238-->[com.google.android.gms:play-services-measurement:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/dbec4e65bd84edcb63bc836a99bde5cd/play-services-measurement-17.2.1/AndroidManifest.xml:49:13-87
+239            android:enabled="true"
+239-->[com.google.android.gms:play-services-measurement:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/dbec4e65bd84edcb63bc836a99bde5cd/play-services-measurement-17.2.1/AndroidManifest.xml:50:13-35
+240            android:exported="false"
+240-->[com.google.android.gms:play-services-measurement:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/dbec4e65bd84edcb63bc836a99bde5cd/play-services-measurement-17.2.1/AndroidManifest.xml:51:13-37
+241            android:permission="android.permission.BIND_JOB_SERVICE" />
+241-->[com.google.android.gms:play-services-measurement:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/dbec4e65bd84edcb63bc836a99bde5cd/play-services-measurement-17.2.1/AndroidManifest.xml:52:13-69
+242
+243        <meta-data
+243-->[com.crashlytics.sdk.android:crashlytics-ndk:2.1.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/86b1396ada66187c6392e33b66113400/crashlytics-ndk-2.1.1/AndroidManifest.xml:35:9-37:36
+244            android:name="firebase_crashlytics_ndk_enabled"
+244-->[com.crashlytics.sdk.android:crashlytics-ndk:2.1.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/86b1396ada66187c6392e33b66113400/crashlytics-ndk-2.1.1/AndroidManifest.xml:36:13-60
+245            android:value="true" />
+245-->[com.crashlytics.sdk.android:crashlytics-ndk:2.1.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/86b1396ada66187c6392e33b66113400/crashlytics-ndk-2.1.1/AndroidManifest.xml:37:13-33
+246
+247        <provider
+247-->[com.google.firebase:firebase-perf:19.0.4] /home/pascal/.gradle/caches/transforms-2/files-2.1/3b3062db09fc6464c004d4e78ca9d2c0/firebase-perf-19.0.4/AndroidManifest.xml:25:9-29:39
+248            android:name="com.google.firebase.perf.provider.FirebasePerfProvider"
+248-->[com.google.firebase:firebase-perf:19.0.4] /home/pascal/.gradle/caches/transforms-2/files-2.1/3b3062db09fc6464c004d4e78ca9d2c0/firebase-perf-19.0.4/AndroidManifest.xml:26:13-82
+249            android:authorities="com.pca.gomusic.firebaseperfprovider"
+249-->[com.google.firebase:firebase-perf:19.0.4] /home/pascal/.gradle/caches/transforms-2/files-2.1/3b3062db09fc6464c004d4e78ca9d2c0/firebase-perf-19.0.4/AndroidManifest.xml:27:13-72
+250            android:exported="false"
+250-->[com.google.firebase:firebase-perf:19.0.4] /home/pascal/.gradle/caches/transforms-2/files-2.1/3b3062db09fc6464c004d4e78ca9d2c0/firebase-perf-19.0.4/AndroidManifest.xml:28:13-37
+251            android:initOrder="101" />
+251-->[com.google.firebase:firebase-perf:19.0.4] /home/pascal/.gradle/caches/transforms-2/files-2.1/3b3062db09fc6464c004d4e78ca9d2c0/firebase-perf-19.0.4/AndroidManifest.xml:29:13-36
+252        <provider
+252-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:31:9-37:35
+253            android:name="androidx.work.impl.WorkManagerInitializer"
+253-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:32:13-69
+254            android:authorities="com.pca.gomusic.workmanager-init"
+254-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:33:13-68
+255            android:directBootAware="false"
+255-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:34:13-44
+256            android:exported="false"
+256-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:35:13-37
+257            android:multiprocess="true" />
+257-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:36:13-40
+258
+259        <service
+259-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:39:9-44:35
+260            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+260-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:40:13-88
+261            android:directBootAware="false"
+261-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:41:13-44
+262            android:enabled="@bool/enable_system_alarm_service_default"
+262-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:42:13-72
+263            android:exported="false" />
+263-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:43:13-37
+264        <service
+264-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:45:9-51:35
+265            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+265-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:46:13-84
+266            android:directBootAware="false"
+266-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:47:13-44
+267            android:enabled="@bool/enable_system_job_service_default"
+267-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:48:13-70
+268            android:exported="true"
+268-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:49:13-36
+269            android:permission="android.permission.BIND_JOB_SERVICE" />
+269-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:50:13-69
+270        <service
+270-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:52:9-57:35
+271            android:name="androidx.work.impl.foreground.SystemForegroundService"
+271-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:53:13-81
+272            android:directBootAware="false"
+272-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:54:13-44
+273            android:enabled="@bool/enable_system_foreground_service_default"
+273-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:55:13-77
+274            android:exported="false" />
+274-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:56:13-37
+275
+276        <receiver
+276-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:59:9-64:35
+277            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+277-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:60:13-88
+278            android:directBootAware="false"
+278-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:61:13-44
+279            android:enabled="true"
+279-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:62:13-35
+280            android:exported="false" />
+280-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:63:13-37
+281        <receiver
+281-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:65:9-75:20
+282            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+282-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:66:13-106
+283            android:directBootAware="false"
+283-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:67:13-44
+284            android:enabled="false"
+284-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:68:13-36
+285            android:exported="false" >
+285-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:69:13-37
+286            <intent-filter>
+286-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:71:13-74:29
+287                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+287-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:72:17-87
+287-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:72:25-84
+288                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+288-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:73:17-90
+288-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:73:25-87
+289            </intent-filter>
+290        </receiver>
+291        <receiver
+291-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:76:9-86:20
+292            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+292-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:77:13-104
+293            android:directBootAware="false"
+293-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:78:13-44
+294            android:enabled="false"
+294-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:79:13-36
+295            android:exported="false" >
+295-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:80:13-37
+296            <intent-filter>
+296-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:82:13-85:29
+297                <action android:name="android.intent.action.BATTERY_OKAY" />
+297-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:83:17-77
+297-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:83:25-74
+298                <action android:name="android.intent.action.BATTERY_LOW" />
+298-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:84:17-76
+298-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:84:25-73
+299            </intent-filter>
+300        </receiver>
+301        <receiver
+301-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:87:9-97:20
+302            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+302-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:88:13-104
+303            android:directBootAware="false"
+303-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:89:13-44
+304            android:enabled="false"
+304-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:90:13-36
+305            android:exported="false" >
+305-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:91:13-37
+306            <intent-filter>
+306-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:93:13-96:29
+307                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+307-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:94:17-83
+307-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:94:25-80
+308                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+308-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:95:17-82
+308-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:95:25-79
+309            </intent-filter>
+310        </receiver>
+311        <receiver
+311-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:98:9-107:20
+312            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+312-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:99:13-103
+313            android:directBootAware="false"
+313-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:100:13-44
+314            android:enabled="false"
+314-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:101:13-36
+315            android:exported="false" >
+315-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:102:13-37
+316            <intent-filter>
+316-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:104:13-106:29
+317                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+317-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:105:17-79
+317-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:105:25-76
+318            </intent-filter>
+319        </receiver>
+320        <receiver
+320-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:108:9-119:20
+321            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+321-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:109:13-88
+322            android:directBootAware="false"
+322-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:110:13-44
+323            android:enabled="false"
+323-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:111:13-36
+324            android:exported="false" >
+324-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:112:13-37
+325            <intent-filter>
+325-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:114:13-118:29
+326                <action android:name="android.intent.action.BOOT_COMPLETED" />
+326-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:115:17-79
+326-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:115:25-76
+327                <action android:name="android.intent.action.TIME_SET" />
+327-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:116:17-73
+327-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:116:25-70
+328                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+328-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:117:17-81
+328-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:117:25-78
+329            </intent-filter>
+330        </receiver>
+331        <receiver
+331-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:120:9-129:20
+332            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+332-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:121:13-99
+333            android:directBootAware="false"
+333-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:122:13-44
+334            android:enabled="@bool/enable_system_alarm_service_default"
+334-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:123:13-72
+335            android:exported="false" >
+335-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:124:13-37
+336            <intent-filter>
+336-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:126:13-128:29
+337                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+337-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:127:17-98
+337-->[androidx.work:work-runtime:2.3.0-beta02] /home/pascal/.gradle/caches/transforms-2/files-2.1/74f1fcf0db7792b4728dcc6808f0d71f/work-runtime-2.3.0-beta02/AndroidManifest.xml:127:25-95
+338            </intent-filter>
+339        </receiver>
+340        <receiver
+340-->[com.google.firebase:firebase-iid:20.0.2] /home/pascal/.gradle/caches/transforms-2/files-2.1/9bddcd611c421e154902999a55a05402/firebase-iid-20.0.2/AndroidManifest.xml:37:9-44:20
+341            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+341-->[com.google.firebase:firebase-iid:20.0.2] /home/pascal/.gradle/caches/transforms-2/files-2.1/9bddcd611c421e154902999a55a05402/firebase-iid-20.0.2/AndroidManifest.xml:38:13-78
+342            android:exported="true"
+342-->[com.google.firebase:firebase-iid:20.0.2] /home/pascal/.gradle/caches/transforms-2/files-2.1/9bddcd611c421e154902999a55a05402/firebase-iid-20.0.2/AndroidManifest.xml:39:13-36
+343            android:permission="com.google.android.c2dm.permission.SEND" >
+343-->[com.google.firebase:firebase-iid:20.0.2] /home/pascal/.gradle/caches/transforms-2/files-2.1/9bddcd611c421e154902999a55a05402/firebase-iid-20.0.2/AndroidManifest.xml:40:13-73
+344            <intent-filter>
+344-->[com.google.firebase:firebase-iid:20.0.2] /home/pascal/.gradle/caches/transforms-2/files-2.1/9bddcd611c421e154902999a55a05402/firebase-iid-20.0.2/AndroidManifest.xml:41:13-43:29
+345                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+345-->[com.google.firebase:firebase-iid:20.0.2] /home/pascal/.gradle/caches/transforms-2/files-2.1/9bddcd611c421e154902999a55a05402/firebase-iid-20.0.2/AndroidManifest.xml:42:17-81
+345-->[com.google.firebase:firebase-iid:20.0.2] /home/pascal/.gradle/caches/transforms-2/files-2.1/9bddcd611c421e154902999a55a05402/firebase-iid-20.0.2/AndroidManifest.xml:42:25-78
+346            </intent-filter>
+347        </receiver>
+348
+349        <activity
+349-->[com.google.android.gms:play-services-base:17.1.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/520030dd601a6acf90fd37a884934e09/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+350            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+350-->[com.google.android.gms:play-services-base:17.1.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/520030dd601a6acf90fd37a884934e09/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+351            android:exported="false"
+351-->[com.google.android.gms:play-services-base:17.1.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/520030dd601a6acf90fd37a884934e09/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+352            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- The activity will be merged into the manifest of the hosting app. -->
+352-->[com.google.android.gms:play-services-base:17.1.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/520030dd601a6acf90fd37a884934e09/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+353        <activity
+353-->[com.google.android.play:core:1.6.4] /home/pascal/.gradle/caches/transforms-2/files-2.1/3501e3a065e53f5b45d4239b946cf52f/core-1.6.4/AndroidManifest.xml:8:5-271
+354            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+354-->[com.google.android.play:core:1.6.4] /home/pascal/.gradle/caches/transforms-2/files-2.1/3501e3a065e53f5b45d4239b946cf52f/core-1.6.4/AndroidManifest.xml:8:15-102
+355            android:enabled="false"
+355-->[com.google.android.play:core:1.6.4] /home/pascal/.gradle/caches/transforms-2/files-2.1/3501e3a065e53f5b45d4239b946cf52f/core-1.6.4/AndroidManifest.xml:8:103-126
+356            android:exported="false"
+356-->[com.google.android.play:core:1.6.4] /home/pascal/.gradle/caches/transforms-2/files-2.1/3501e3a065e53f5b45d4239b946cf52f/core-1.6.4/AndroidManifest.xml:8:127-151
+357            android:launchMode="singleInstance"
+357-->[com.google.android.play:core:1.6.4] /home/pascal/.gradle/caches/transforms-2/files-2.1/3501e3a065e53f5b45d4239b946cf52f/core-1.6.4/AndroidManifest.xml:8:204-239
+358            android:process=":playcore_missing_splits_activity"
+358-->[com.google.android.play:core:1.6.4] /home/pascal/.gradle/caches/transforms-2/files-2.1/3501e3a065e53f5b45d4239b946cf52f/core-1.6.4/AndroidManifest.xml:8:152-203
+359            android:stateNotNeeded="true" />
+359-->[com.google.android.play:core:1.6.4] /home/pascal/.gradle/caches/transforms-2/files-2.1/3501e3a065e53f5b45d4239b946cf52f/core-1.6.4/AndroidManifest.xml:8:240-269
+360        <activity
+360-->[com.google.android.play:core:1.6.4] /home/pascal/.gradle/caches/transforms-2/files-2.1/3501e3a065e53f5b45d4239b946cf52f/core-1.6.4/AndroidManifest.xml:9:5-278
+361            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+361-->[com.google.android.play:core:1.6.4] /home/pascal/.gradle/caches/transforms-2/files-2.1/3501e3a065e53f5b45d4239b946cf52f/core-1.6.4/AndroidManifest.xml:9:15-95
+362            android:enabled="false"
+362-->[com.google.android.play:core:1.6.4] /home/pascal/.gradle/caches/transforms-2/files-2.1/3501e3a065e53f5b45d4239b946cf52f/core-1.6.4/AndroidManifest.xml:9:96-119
+363            android:exported="false"
+363-->[com.google.android.play:core:1.6.4] /home/pascal/.gradle/caches/transforms-2/files-2.1/3501e3a065e53f5b45d4239b946cf52f/core-1.6.4/AndroidManifest.xml:9:120-144
+364            android:process=":playcore_dialog_wrapper_activity"
+364-->[com.google.android.play:core:1.6.4] /home/pascal/.gradle/caches/transforms-2/files-2.1/3501e3a065e53f5b45d4239b946cf52f/core-1.6.4/AndroidManifest.xml:9:175-226
+365            android:stateNotNeeded="true"
+365-->[com.google.android.play:core:1.6.4] /home/pascal/.gradle/caches/transforms-2/files-2.1/3501e3a065e53f5b45d4239b946cf52f/core-1.6.4/AndroidManifest.xml:9:145-174
+366            android:theme="@style/Theme.PlayCore.Transparent" />
+366-->[com.google.android.play:core:1.6.4] /home/pascal/.gradle/caches/transforms-2/files-2.1/3501e3a065e53f5b45d4239b946cf52f/core-1.6.4/AndroidManifest.xml:9:227-276
+367        <!--
+368         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+369         with the application context. This config is merged in with the host app's manifest,
+370         but there can only be one provider with the same authority activated at any given
+371         point; so if the end user has two or more different apps that use Facebook SDK, only the
+372         first one will be able to use the provider. To work around this problem, we use the
+373         following placeholder in the authority to identify each host application as if it was
+374         a completely different provider.
+375        -->
+376        <provider
+376-->[com.facebook.android:facebook-core:5.9.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ca08b30f3a6afc6d380878caf4062abf/jetified-facebook-core-5.9.0/AndroidManifest.xml:39:9-42:40
+377            android:name="com.facebook.internal.FacebookInitProvider"
+377-->[com.facebook.android:facebook-core:5.9.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ca08b30f3a6afc6d380878caf4062abf/jetified-facebook-core-5.9.0/AndroidManifest.xml:40:13-70
+378            android:authorities="com.pca.gomusic.FacebookInitProvider"
+378-->[com.facebook.android:facebook-core:5.9.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ca08b30f3a6afc6d380878caf4062abf/jetified-facebook-core-5.9.0/AndroidManifest.xml:41:13-72
+379            android:exported="false" />
+379-->[com.facebook.android:facebook-core:5.9.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ca08b30f3a6afc6d380878caf4062abf/jetified-facebook-core-5.9.0/AndroidManifest.xml:42:13-37
+380
+381        <receiver
+381-->[com.facebook.android:facebook-core:5.9.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ca08b30f3a6afc6d380878caf4062abf/jetified-facebook-core-5.9.0/AndroidManifest.xml:44:9-50:20
+382            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+382-->[com.facebook.android:facebook-core:5.9.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ca08b30f3a6afc6d380878caf4062abf/jetified-facebook-core-5.9.0/AndroidManifest.xml:45:13-86
+383            android:exported="false" >
+383-->[com.facebook.android:facebook-core:5.9.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ca08b30f3a6afc6d380878caf4062abf/jetified-facebook-core-5.9.0/AndroidManifest.xml:46:13-37
+384            <intent-filter>
+384-->[com.facebook.android:facebook-core:5.9.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ca08b30f3a6afc6d380878caf4062abf/jetified-facebook-core-5.9.0/AndroidManifest.xml:47:13-49:29
+385                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+385-->[com.facebook.android:facebook-core:5.9.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ca08b30f3a6afc6d380878caf4062abf/jetified-facebook-core-5.9.0/AndroidManifest.xml:48:17-95
+385-->[com.facebook.android:facebook-core:5.9.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ca08b30f3a6afc6d380878caf4062abf/jetified-facebook-core-5.9.0/AndroidManifest.xml:48:25-92
+386            </intent-filter>
+387        </receiver>
+388        <receiver
+388-->[com.facebook.android:facebook-core:5.9.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ca08b30f3a6afc6d380878caf4062abf/jetified-facebook-core-5.9.0/AndroidManifest.xml:51:9-58:20
+389            android:name="com.facebook.CampaignTrackingReceiver"
+389-->[com.facebook.android:facebook-core:5.9.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ca08b30f3a6afc6d380878caf4062abf/jetified-facebook-core-5.9.0/AndroidManifest.xml:52:13-65
+390            android:exported="true"
+390-->[com.facebook.android:facebook-core:5.9.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ca08b30f3a6afc6d380878caf4062abf/jetified-facebook-core-5.9.0/AndroidManifest.xml:53:13-36
+391            android:permission="android.permission.INSTALL_PACKAGES" >
+391-->[com.facebook.android:facebook-core:5.9.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ca08b30f3a6afc6d380878caf4062abf/jetified-facebook-core-5.9.0/AndroidManifest.xml:54:13-69
+392            <intent-filter>
+392-->[com.google.android.gms:play-services-measurement:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/dbec4e65bd84edcb63bc836a99bde5cd/play-services-measurement-17.2.1/AndroidManifest.xml:39:13-41:29
+393                <action android:name="com.android.vending.INSTALL_REFERRER" />
+393-->[com.google.android.gms:play-services-measurement:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/dbec4e65bd84edcb63bc836a99bde5cd/play-services-measurement-17.2.1/AndroidManifest.xml:40:17-79
+393-->[com.google.android.gms:play-services-measurement:17.2.1] /home/pascal/.gradle/caches/transforms-2/files-2.1/dbec4e65bd84edcb63bc836a99bde5cd/play-services-measurement-17.2.1/AndroidManifest.xml:40:25-76
+394            </intent-filter>
+395        </receiver>
+396
+397        <provider
+397-->[com.google.firebase:firebase-common:19.3.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ec9c104ef9f532c39c958cadf4780445/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+398            android:name="com.google.firebase.provider.FirebaseInitProvider"
+398-->[com.google.firebase:firebase-common:19.3.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ec9c104ef9f532c39c958cadf4780445/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+399            android:authorities="com.pca.gomusic.firebaseinitprovider"
+399-->[com.google.firebase:firebase-common:19.3.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ec9c104ef9f532c39c958cadf4780445/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+400            android:exported="false"
+400-->[com.google.firebase:firebase-common:19.3.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ec9c104ef9f532c39c958cadf4780445/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+401            android:initOrder="100" />
+401-->[com.google.firebase:firebase-common:19.3.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ec9c104ef9f532c39c958cadf4780445/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+402        <provider
+402-->[com.google.android.gms:play-services-ads-lite:18.3.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/a0f94cdb10c0f48afade11b9f0b4f2ac/play-services-ads-lite-18.3.0/AndroidManifest.xml:35:9-39:39
+403            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+403-->[com.google.android.gms:play-services-ads-lite:18.3.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/a0f94cdb10c0f48afade11b9f0b4f2ac/play-services-ads-lite-18.3.0/AndroidManifest.xml:36:13-76
+404            android:authorities="com.pca.gomusic.mobileadsinitprovider"
+404-->[com.google.android.gms:play-services-ads-lite:18.3.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/a0f94cdb10c0f48afade11b9f0b4f2ac/play-services-ads-lite-18.3.0/AndroidManifest.xml:37:13-73
+405            android:exported="false"
+405-->[com.google.android.gms:play-services-ads-lite:18.3.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/a0f94cdb10c0f48afade11b9f0b4f2ac/play-services-ads-lite-18.3.0/AndroidManifest.xml:38:13-37
+406            android:initOrder="100" />
+406-->[com.google.android.gms:play-services-ads-lite:18.3.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/a0f94cdb10c0f48afade11b9f0b4f2ac/play-services-ads-lite-18.3.0/AndroidManifest.xml:39:13-36
+407
+408        <service
+408-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/2b1f8995b2656e2f3c8a1c4a09ead61e/transport-backend-cct-2.2.0/AndroidManifest.xml:29:9-35:19
+409            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+409-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/2b1f8995b2656e2f3c8a1c4a09ead61e/transport-backend-cct-2.2.0/AndroidManifest.xml:30:13-103
+410            android:exported="false" >
+410-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/2b1f8995b2656e2f3c8a1c4a09ead61e/transport-backend-cct-2.2.0/AndroidManifest.xml:31:13-37
+411            <meta-data
+411-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/2b1f8995b2656e2f3c8a1c4a09ead61e/transport-backend-cct-2.2.0/AndroidManifest.xml:32:13-34:39
+412                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+412-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/2b1f8995b2656e2f3c8a1c4a09ead61e/transport-backend-cct-2.2.0/AndroidManifest.xml:33:17-94
+413                android:value="cct" />
+413-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/2b1f8995b2656e2f3c8a1c4a09ead61e/transport-backend-cct-2.2.0/AndroidManifest.xml:34:17-36
+414        </service>
+415        <service
+415-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ac993f48191c5dd8b32c6e47685842b4/transport-runtime-2.2.0/AndroidManifest.xml:26:9-30:19
+416            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+416-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ac993f48191c5dd8b32c6e47685842b4/transport-runtime-2.2.0/AndroidManifest.xml:27:13-117
+417            android:exported="false"
+417-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ac993f48191c5dd8b32c6e47685842b4/transport-runtime-2.2.0/AndroidManifest.xml:28:13-37
+418            android:permission="android.permission.BIND_JOB_SERVICE" >
+418-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ac993f48191c5dd8b32c6e47685842b4/transport-runtime-2.2.0/AndroidManifest.xml:29:13-69
+419        </service>
+420
+421        <receiver
+421-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ac993f48191c5dd8b32c6e47685842b4/transport-runtime-2.2.0/AndroidManifest.xml:32:9-34:40
+422            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+422-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ac993f48191c5dd8b32c6e47685842b4/transport-runtime-2.2.0/AndroidManifest.xml:33:13-132
+423            android:exported="false" />
+423-->[com.google.android.datatransport:transport-runtime:2.2.0] /home/pascal/.gradle/caches/transforms-2/files-2.1/ac993f48191c5dd8b32c6e47685842b4/transport-runtime-2.2.0/AndroidManifest.xml:34:13-37
+424
+425        <service
+425-->[androidx.room:room-runtime:2.2.2] /home/pascal/.gradle/caches/transforms-2/files-2.1/6374b2ca977c77ddd9073b3270bbded2/room-runtime-2.2.2/AndroidManifest.xml:25:9-27:40
+426            android:name="androidx.room.MultiInstanceInvalidationService"
+426-->[androidx.room:room-runtime:2.2.2] /home/pascal/.gradle/caches/transforms-2/files-2.1/6374b2ca977c77ddd9073b3270bbded2/room-runtime-2.2.2/AndroidManifest.xml:26:13-74
+427            android:exported="false" />
+427-->[androidx.room:room-runtime:2.2.2] /home/pascal/.gradle/caches/transforms-2/files-2.1/6374b2ca977c77ddd9073b3270bbded2/room-runtime-2.2.2/AndroidManifest.xml:27:13-37
+428    </application>
+429
+430</manifest>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+        <item
+            android:title="@string/play_next"
+            android:id="@+id/play_next">
+        </item>
+
+        <item
+            android:title="@string/delete_text"
+            android:id="@+id/delete">
+        </item>
+
+        <item
+            android:title="@string/yeah"
+            android:id="@+id/share">
+        </item>
+
+        <item
+            android:title="@string/make_ringtone"
+            android:id="@+id/make_ringtone">
+        </item>
+
+    </group>
+
+</menu>

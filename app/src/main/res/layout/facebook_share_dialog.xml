@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="40.0dip"
+    android:background="@drawable/alert_dialog_custom_style"
+    android:minWidth="330.0dip"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_marginStart="10.0dip"
+            android:layout_marginEnd="20.0dip"
+            android:src="@drawable/ic_facebook" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/connect"
+            android:textColor="@color/com_facebook_blue"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@id/delete_song_title"
+        android:layout_width="190.0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20.0dip"
+        android:layout_marginEnd="20.0dip"
+        android:text="@string/let_your_friends_know_what_you_re_listening_to"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:layout_marginStart="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginEnd="10.0dip"
+        android:layout_marginBottom="10.0dip"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/what_s_on_your_mind"
+        android:padding="10.0dip" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/yeah"
+        style="?android:buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20.0dip"
+        android:text="@string/yeah"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="15.0sp" />
+</androidx.appcompat.widget.LinearLayoutCompat>
