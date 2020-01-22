@@ -1,1 +1,132 @@
-<?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:tools="http://schemas.android.com/tools"    package="com.pca.gomusic"    android:compileSdkVersion="29"    android:compileSdkVersionCodename="10">    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />    <uses-permission android:name="android.permission.WAKE_LOCK" />    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />    <uses-permission-sdk-23 android:name="android.permission.WRITE_SETTINGS" />    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" />    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />    <uses-permission android:name="android.permission.INTERNET" />    <uses-permission        android:name="android.permission.WRITE_SECURE_SETTINGS"        tools:ignore="ProtectedPermissions" />    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />    <application        android:appCategory="audio"        android:icon="@drawable/app_icon"        android:label="@string/app_name"        android:roundIcon="@drawable/app_icon"        android:supportsRtl="true"        android:theme="@style/AppTheme"        android:useEmbeddedDex="true"        tools:ignore="GoogleAppIndexingWarning">        <activity android:name=".Activities.FeedbackActivity"            android:theme="@style/AppTheme"></activity>        <activity            android:name=".Activities.SignInActivity"            android:theme="@style/AppTheme"></activity>        <activity            android:name=".Activities.SettingsActivity"            android:theme="@style/AppTheme"></activity>        <meta-data            android:name="firebase_performance_logcat_enabled"            android:value="true" />        <activity            android:name=".Activities.PermissionActivity"            android:screenOrientation="portrait"            android:theme="@style/AppTheme.Permission" />        <activity android:name=".Activities.AlbumActivity" />        <activity            android:name=".Activities.ArtistActivity"            android:label="" />        <service            android:name=".Services.MyMessagingService"            android:exported="false">            <intent-filter>                <action android:name="com.google.firebase.MESSAGING_EVENT" />            </intent-filter>        </service>        <service            android:name=".Services.PlayerService"            android:enabled="true"            android:exported="true" />        <meta-data            android:name="com.google.firebase.messaging.default_notification_icon"            android:resource="@drawable/app_icon" />        <meta-data            android:name="com.google.firebase.messaging.default_notification_color"            android:resource="@color/colorAccent" />        <meta-data            android:name="com.google.android.gms.ads.APPLICATION_ID"            android:value="ca-app-pub-2858093115841936~3200227222" />        <meta-data            android:name="com.facebook.sdk.ApplicationId"            android:value="@string/facebook_application_id" />        <provider            android:name="com.facebook.FacebookContentProvider"            android:authorities="com.facebook.app.FacebookContentProvider310168126590917"            android:exported="false" />        <activity            android:name=".Activities.WelcomeScreen"            android:screenOrientation="portrait"            android:theme="@style/AppTheme">            <intent-filter>                <action android:name="android.intent.action.MAIN" />                <category android:name="android.intent.category.LAUNCHER" />            </intent-filter>        </activity>        <activity            android:name=".Activities.VideoPlayerActivity"            android:alwaysRetainTaskState="true"            android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize"            android:launchMode="singleTask"            android:parentActivityName=".Activities.MainActivity"            android:resizeableActivity="true"            android:rotationAnimation="crossfade"            android:supportsPictureInPicture="true"            android:theme="@style/AppTheme.NoActionBarVideoPlayerActivity" />        <activity            android:name=".Activities.MainActivity"            android:alwaysRetainTaskState="false"            android:launchMode="standard"            android:parentActivityName=".Activities.MainActivity"            android:resizeableActivity="true"            android:screenOrientation="portrait"            android:showWhenLocked="false"            android:supportsPictureInPicture="true" />        <meta-data            android:name="io.fabric.ApiKey"            android:value="e98b20335baba8b05e9215924c85969c6bcce61d" />        <meta-data            android:name="com.google.android.gms.version"            android:value="@integer/google_play_services_version" />        <activity android:name="com.facebook.FacebookActivity" />        <activity android:name="com.google.android.gms.ads.AdActivity" />    </application></manifest>
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.pca.gomusic"
+    android:compileSdkVersion="29"
+    android:compileSdkVersionCodename="10">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_SECURE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:appCategory="audio"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:useEmbeddedDex="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Activities.FeedbackActivity"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".Activities.SignInActivity"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".Activities.SettingsActivity"
+            android:theme="@style/AppTheme"></activity>
+
+        <meta-data
+            android:name="firebase_performance_logcat_enabled"
+            android:value="true" />
+
+        <activity
+            android:name=".Activities.PermissionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Permission" />
+        <activity android:name=".Activities.AlbumActivity" />
+        <activity
+            android:name=".Activities.ArtistActivity"
+            android:label="" />
+
+        <service
+            android:name=".Services.MyMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Services.PlayerService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/app_icon" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value=" App ID Here" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_application_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider310168126590917"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activities.WelcomeScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.VideoPlayerActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize"
+            android:launchMode="singleTask"
+            android:parentActivityName=".Activities.MainActivity"
+            android:resizeableActivity="true"
+            android:rotationAnimation="crossfade"
+            android:supportsPictureInPicture="true"
+            android:theme="@style/AppTheme.NoActionBarVideoPlayerActivity" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:alwaysRetainTaskState="false"
+            android:launchMode="standard"
+            android:parentActivityName=".Activities.MainActivity"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait"
+            android:showWhenLocked="false"
+            android:supportsPictureInPicture="true" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="Key here" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name="com.facebook.FacebookActivity" />
+        <activity android:name="com.google.android.gms.ads.AdActivity" />
+    </application>
+
+</manifest>
