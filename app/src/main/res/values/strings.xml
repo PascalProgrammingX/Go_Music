@@ -23,7 +23,7 @@
 
     <string name="Set_successfully" translatable="true">Set successfully</string>
 
-    <string name="facebook_application_id" translatable="false">310168126590917</string>
+    <string name="facebook_application_id" translatable="false">// Replace with your Facebook App ID</string>
 
     <string name="delete_text" translatable="true">Delete</string>
     <string name="sure_to_delete" translatable="true">Are you sure to delete:</string>
